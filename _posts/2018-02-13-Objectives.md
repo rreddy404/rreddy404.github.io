@@ -2,6 +2,7 @@
 layout: post
 title: Objectives
 image: /img/hello_world.jpeg
+tags: #TestingTags
 ---
 
 The goal of this blog is to journal my learning experiences as I try to expand my technical knowledge of automation.
