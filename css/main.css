@@ -308,8 +308,9 @@ footer .theme-by {
 
 /* --- Post preview --- */
 
+/* --- Changed from 20px--- */
 .post-preview {
-  padding: 20px 0;
+  padding: 18px 0;
   border-bottom: 1px solid #eee;
 }
 
