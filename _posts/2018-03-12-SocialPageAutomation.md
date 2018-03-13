@@ -21,6 +21,7 @@ Many sites will disable accounts if they detect fraud or automation
 2. Visiting urls in rapid succession, too fast for humans
 3. Not scrolling through the page
 
+
 ##### Features:
 Design features to address aforementioned issues:
 
@@ -28,6 +29,7 @@ Design features to address aforementioned issues:
 2. User specified minimum time interval, script will choose a random time between Min and Max (Min + 30 seconds)  
 3. Selenium action to scroll down random interval between 600 and 1280 pixels
 4. Log-in and Log-out is automatic
+
 
 ##### Future Consideration:
 Features on my wish list:
