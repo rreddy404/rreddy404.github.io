@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Objectives
-image: /img/hello_world.jpeg
+image: /img/python_sh-600x600.png
 tags: TestingTags
 ---
 
