@@ -16,6 +16,7 @@ The script I wrote uses Python, Selenium and Chrome.
 
 It opens a session of Chrome, logs into a social media page, iterates through saved urls in a CSV file, then logs out and ends the session.
 
+<br>
 
 #### Fraud Factors Considered in Development
 Many sites will disable accounts if they detect fraud or automation
@@ -23,6 +24,7 @@ Many sites will disable accounts if they detect fraud or automation
 2. Visiting urls in rapid succession, too fast for humans
 3. Not scrolling through the page
 
+<br>
 
 #### Features:
 Design features to address aforementioned issues
@@ -31,9 +33,12 @@ Design features to address aforementioned issues
 3. Selenium action to scroll down random interval between 600 and 1280 pixels
 4. Log-in and Log-out is automatic
 
+<br>
 
 #### Future Consideration:
 Features on my wish list
 1. Randomized iteration of CSV file urls
 2. Auto Scrape urls to Update CSV files 
 3. Add Keyword browsing to site for associations
+
+<br>
