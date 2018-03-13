@@ -14,7 +14,7 @@ I really liked the concept of this, as it could help me bolster my social media 
 The script I wrote uses Python, Selenium and Chrome. 
 It opens a session of Chrome, logs into a social media page, iterates through saved urls in a CSV file, then logs out and ends the session.
 
-##### Fraud Factors Considered in Development:
+#### Fraud Factors Considered in Development
 Many sites will disable accounts if they detect fraud or automation
 
 1. Too many profile views within a set period 
@@ -22,8 +22,8 @@ Many sites will disable accounts if they detect fraud or automation
 3. Not scrolling through the page
 
 
-##### Features:
-Design features to address aforementioned issues:
+#### Features:
+Design features to address aforementioned issues
 
 1. CSV file was limited to below 200 urls
 2. User specified minimum time interval, script will choose a random time between Min and Max (Min + 30 seconds)  
@@ -31,8 +31,8 @@ Design features to address aforementioned issues:
 4. Log-in and Log-out is automatic
 
 
-##### Future Consideration:
-Features on my wish list:
+#### Future Consideration:
+Features on my wish list
 
 1. Randomized iteration of CSV file urls
 2. Auto Scrape urls to Update CSV files 
