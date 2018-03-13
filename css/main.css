@@ -341,6 +341,7 @@ footer .theme-by {
 }
 .post-preview .post-subtitle {
   margin: 0;
+  font-size: 20px;
   font-weight: 300;
   margin-bottom: 10px;
 }
@@ -378,7 +379,8 @@ footer .theme-by {
   width: 192px;
 }
 .post-preview .post-read-more {
-  font-weight: 800;
+  font-size: 18px;
+  font-weight: 500;
 }
 /* --- Changed from 36px--- */
 @media only screen and (min-width: 768px) {
