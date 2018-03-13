@@ -17,15 +17,11 @@ The script I wrote uses Python, Selenium and Chrome.
 It opens a session of Chrome, logs into a social media page, iterates through saved urls in a CSV file, then logs out and ends the session.
 
 
-
-
 #### Fraud Factors Considered in Development
 Many sites will disable accounts if they detect fraud or automation
 1. Too many profile views within a set period 
 2. Visiting urls in rapid succession, too fast for humans
 3. Not scrolling through the page
-
-
 
 
 #### Features:
@@ -34,8 +30,6 @@ Design features to address aforementioned issues
 2. User specified minimum time interval, script will choose a random time between Min and Max (Min + 30 seconds)  
 3. Selenium action to scroll down random interval between 600 and 1280 pixels
 4. Log-in and Log-out is automatic
-
-
 
 
 #### Future Consideration:
