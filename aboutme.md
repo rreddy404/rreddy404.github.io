@@ -6,6 +6,7 @@ subtitle: Rahul Reddy
 
 ## Education:
 
+
 ### Georgia Institute of Technology 
 Industrial Systems Engineering & Economics Minor [2007 to 2011]
 > Relevant Coursework: Statistics, Advanced Optimization, Advanced Stochastics, Database Systems, Advanced Macroeconomics, Finance & Investments, Impact Speakers Forum
