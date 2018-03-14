@@ -1,16 +1,16 @@
 ---
 layout: page
 title: About me
-subtitle: Why you'd want to go on a date with me
+subtitle: Rahul Reddy
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+## Education:
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+### Georgia Institute of Technology 
+Industrial Systems Engineering & Economics Minor [2007 to 2011]
+> Relevant Coursework: Statistics, Advanced Optimization, Advanced Stochastics, Database Systems, Advanced Macroeconomics, Finance & Investments, Impact Speakers Forum
 
-What else do you need?
 
-### my history
-
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](http://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+### Auburn University 
+Master of Science (M.S.) [2014 to 2015]
+> Research and Teaching Assistant Focused on Operations Research
