@@ -40,8 +40,6 @@ Features on my wish list
 1. Randomized iteration of CSV file urls
 2. Auto Scrape urls to Update CSV files 
 3. Add Keyword browsing to site for associations
-
+<br>
 
 [Github: Social Page Automation](https://github.com/rreddy404/SocialPageAutomation "Click Please")
-
-<br>
