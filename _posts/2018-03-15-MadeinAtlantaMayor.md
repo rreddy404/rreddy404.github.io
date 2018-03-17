@@ -2,7 +2,7 @@
 layout: post
 title: Switchyards - Made in Atlanta
 subtitle: Former Mayor Kasim Reed
-bigimg: /img/SocialPageAuto.png
+bigimg: /img/MadeinAtl.jpg
 tags: [Atlanta Tech, Kasim Reed, SwitchYards]
 ---
 
