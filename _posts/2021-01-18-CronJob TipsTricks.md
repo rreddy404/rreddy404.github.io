@@ -13,7 +13,7 @@ I followed the typical steps, but I couldn't figure out why my cron did not exec
 *Mistakes were made, doors were slammed, and anger insued* <br>
 
 If your cron job is not running on time as expected:
-## Here is what to check:
+# Here is what to check:
 1. Check the path
 2. Check the timezone
 3. Check terminal session
