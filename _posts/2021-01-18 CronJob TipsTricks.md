@@ -2,7 +2,7 @@
 layout: post
 title: Tips and Tricks with Cron Jobs
 subtitle: Tips/Tricks based on mistakes made
-image: /img/Ubuntu.jpg
+image: /img/EC2.svg
 bigimg: /img/CronJob.png
 tags: [EC2, Cron jobs, Dashboard, Linux, Ubuntu]
 ---
