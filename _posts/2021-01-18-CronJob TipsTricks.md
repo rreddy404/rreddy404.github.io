@@ -10,7 +10,7 @@ tags: [EC2, Cron jobs, Dashboard, Linux, Ubuntu]
 In the process of implementing the cron job, there were some unforeseen difficulties. <br>
 I followed the typical steps, but I couldn't figure out why my cron did not execute on time <br>
 <br>
-*Mistakes were made, doors were slammed, and anger insued* <br>
+*Mistakes were made, doors were slammed, and anger ensued* <br>
 
 If your cron job is not running on time as expected:
 # Here is what to check:
@@ -46,5 +46,9 @@ Select the desired timezone by running 'sudo timedatectl set-timezone your_time_
 When I was running the script in the EC2 instance, It kept failing to run overnight. <br>
 I learned that the EC2 instances naturally stop running when the terminal is inactive. <br>
 We can get around this by creating a terminal within a terminal, so that it would run in the background. <br>
-
+I used tmux, which allows you to create an terminal which runs in the background and does not affect your regular terminal. <br>
+In the CLI, type 'tmux' hit enter, and you will be directed into the second terminal. <br>
+From there, you can run the cronjob and the script to be run <br>
+Detach from the tmux terminal by typing 'Ctrl + b' + 'd'.. <br>
+This return the CLI back to its regular terminal.
 
