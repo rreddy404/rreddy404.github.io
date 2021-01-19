@@ -19,36 +19,67 @@ If your cron job is not running on time as expected:
 3. Check terminal session
 
 ### Check the path <br>
-In the CLI, type 'crontab -l' <br>
+In the CLI, type 
+```
+crontab -l
+``` 
+<br>
 This would list the current cron tab file. <br>
 Ensure that all of the file paths are correct and that there are no spelling issues! <br>
 <br>
 If everything is listed as expected, make sure that the specific python environment location is specified. <br>
-Use the command: 'which python' <br>
+Use the command: 
+```
+which python
+```
+<br>
 This will list the location of the python version referenced when you use the python command. <br>
-Typically the python location would be: /usr/bin/python
+Typically the python location would be: 
+```
+/usr/bin/python
+```
 
 ### Check the timezone <br>
 When I created the EC2 instance, I set the server location to the East Coast US. <br>
 I naturally assumed that the server would automatically set it own timezone to match the server's location. <br>
-In the CLI, run 'timedatectl' <br>
+In the CLI, run:
+```
+timedatectl
+```
+<br>
 
 This would list all of the timezones specified on the server. <br>
 The command would list: Local time, Universal time, RTC time, Time zone. <br>
 If the 'Time zone' is not specified as expected, we can then change it to the desired timezone. <br>
 
-To change the timezone, lets first look at all available timezones: in the CLI run 'timedatectl list-timezones'. <br>
+To change the timezone, lets first look at all available timezones, in the CLI run:
+```
+timedatectl list-timezones
+````
+<br>
 This would list all timezones. <br>
 
-Select the desired timezone by running 'sudo timedatectl set-timezone your_time_zone' in the CLI <br>
+Select the desired timezone by running:
+```
+sudo timedatectl set-timezone your_time_zone
+``` 
+<br>
 
 ### Check terminal session <br>
 When I was running the script in the EC2 instance, It kept failing to run overnight. <br>
 I learned that the EC2 instances naturally stop running when the terminal is inactive. <br>
 We can get around this by creating a terminal within a terminal, so that it would run in the background. <br>
 I used tmux, which allows you to create an terminal which runs in the background and does not affect your regular terminal. <br>
-In the CLI, type 'tmux' hit enter, and you will be directed into the second terminal. <br>
+In the CLI, type 
+```
+tmux
+````
+hit enter, and you will be directed into the second terminal. <br>
 From there, you can run the cronjob and the script to be run <br>
-Detach from the tmux terminal by typing 'Ctrl + b' + 'd'.. <br>
+Detach from the tmux terminal by typing 
+```
+Ctrl + b' + 'd
+```
+<br>
 This return the CLI back to its regular terminal.
 
