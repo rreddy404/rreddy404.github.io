@@ -13,12 +13,11 @@ I followed the typical steps, but I couldn't figure out why my cron did not exec
 *Mistakes were made, doors were slammed, and anger insued* <br>
 
 If your cron job is not running on time as expected:
-
 ## Here is what to check:
 1. Check the path
 2. Check the timezone
 3. Check terminal session
-<br>
+
 ### Check the path <br>
 In the CLI, type 'crontab -l' <br>
 This would list the current cron tab file. <br>
@@ -33,14 +32,14 @@ Typically the python location would be: /usr/bin/python
 When I created the EC2 instance, I set the server location to the East Coast US. <br>
 I naturally assumed that the server would automatically set it own timezone to match the server's location. <br>
 In the CLI, run 'timedatectl' <br>
-<br>
+
 This would list all of the timezones specified on the server. <br>
 The command would list: Local time, Universal time, RTC time, Time zone. <br>
 If the 'Time zone' is not specified as expected, we can then change it to the desired timezone. <br>
-<br>
+
 To change the timezone, lets first look at all available timezones: in the CLI run 'timedatectl list-timezones'. <br>
 This would list all timezones. <br>
-<br>
+
 Select the desired timezone by running 'sudo timedatectl set-timezone your_time_zone' in the CLI <br>
 
 ### Check terminal session <br>
