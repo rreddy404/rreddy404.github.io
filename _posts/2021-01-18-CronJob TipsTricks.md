@@ -11,7 +11,6 @@ In the process of implementing the cron job, there were some unforeseen difficul
 I followed the typical steps, but I couldn't figure out why my cron did not execute on time <br>
 <br>
 *Mistakes were made, doors were slammed, and anger insued* <br>
-<br>
 
 If your cron job is not running on time as expected:
 
@@ -20,6 +19,8 @@ If your cron job is not running on time as expected:
 2. Check the timezone
 3. Check terminal session
 
+<br>
+<br>
 ### Check the path
 <br>
 In the CLI, type 'crontab -l' <br>
