@@ -1,4 +1,11 @@
-# Testing is Critical
+---
+layout: post
+title: Testing is Critical
+subtitle: In advertising, the only real risk is standing still.
+image: /img/EC2.svg
+bigimg: /img/CronJob.png
+tags: [testing, advertising,learnings]
+---
 
 It’s a controlled gamble — a responsible way to explore the unknown.  
 The goal of a test is to evaluate a hypothesis. It can be based on extensive technical analysis like MMMs, in‑platform tests, or simply the intuition of stakeholders.  
