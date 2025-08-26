@@ -2,8 +2,8 @@
 layout: post
 title: Testing is Critical
 subtitle: In advertising, the only real risk is standing still.
-image: /img/EC2.svg
-bigimg: /img/CronJob.png
+image: /img/potentialLift.png
+bigimg: /img/potentialLift.png
 tags: [testing, advertising,learnings]
 ---
 
