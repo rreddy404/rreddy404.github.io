@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Understanding Treatment Groups: How to Target, Test, and Measure Effectively"
+title: "Understanding Treatment Groups"
 subtitle: "Defining the right audience is the foundation of meaningful marketing experiments."
 image: /img/treatment_population.png
 bigimg: /img/treatment_population.png
