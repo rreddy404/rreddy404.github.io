@@ -20,8 +20,8 @@ Before you start selecting people, answer this key question:
 
 - **Are you trying to affect a wide, representative audience or a narrow, specialized segment?**
 
-**Broad approach** → Useful when you want scalable, market‑wide insights.  
-**Focused approach** → Ideal when you want to see how a treatment works for a specific demographic or niche.
+**Broad approach**: Useful when you want scalable, market‑wide insights.  
+**Focused approach**: Ideal when you want to see how a treatment works for a specific demographic or niche.
 
 Your purpose will guide which data is relevant and how you segment your audience.
 
@@ -31,8 +31,8 @@ Your purpose will guide which data is relevant and how you segment your audience
 
 Not all factors can be controlled, but all should be considered. This includes:
 
-- **Categorical (Qualitative) Data** → Descriptive attributes like gender, race, or location  
-- **Quantitative Data** → Measurable values like income, height, or purchase frequency
+- **Categorical (Qualitative) Data**: Descriptive attributes like gender, race, or location  
+- **Quantitative Data**: Measurable values like income, height, or purchase frequency
 
 In research terms, data is often split into:
 
@@ -55,7 +55,7 @@ In marketing, the most measurable dependent variables are often direct responses
 - Inquiries or leads  
 
 These are closely tied to **awareness** and **consideration** stages of the funnel.  
-Actions like purchases or long‑term retention are closer to business goals but are harder to attribute directly to a single marketing treatment — too many other factors can interfere.
+Actions like purchases or long‑term retention are closer to business goals but are harder to attribute directly to a single marketing treatment, there are too many other factors that can interfere.
 
 > Think: you can lead a horse to your website, but you can’t make it buy your overpriced vegetable dust.
 
@@ -65,9 +65,9 @@ Actions like purchases or long‑term retention are closer to business goals but
 
 Once you’ve chosen your dependent variable, account for all factors in your population that could influence results. These may include:
 
-- **Demographics** → Age, gender, income  
-- **Psychographics** → Interests, values, lifestyle  
-- **Geographics** → Region, climate, urban vs. rural
+- **Demographics**: Age, gender, income  
+- **Psychographics**: Interests, values, lifestyle  
+- **Geographics**: Region, climate, urban vs. rural
 
 This ties back to your original purpose:
 
@@ -80,10 +80,10 @@ This ties back to your original purpose:
 
 These two concepts are often confused but serve different purposes:
 
-- **Blocking** → Controlling for certain variables so you can compare responses between groups.  
+- **Blocking**: Controlling for certain variables so you can compare responses between groups.  
   *Example:* Measuring how different age categories respond to the same treatment.
 
-- **Targeting** → Designing the treatment specifically for one group and ignoring others.  
+- **Targeting**: Designing the treatment specifically for one group and ignoring others.  
   *Example:* Focusing only on 18–35‑year‑olds and treating responses from other ages as a bonus, not a priority.
 
 ---
@@ -100,7 +100,7 @@ Most clients prefer this approach because it maximizes market potential and avoi
 
 ---
 
-## 📌 Key Takeaways
+## Key Takeaways
 
 - **Start with purpose** — broad vs. focused will shape everything else.  
 - **Choose the right dependent variable** — closer to marketing actions = easier to measure.  
@@ -108,7 +108,3 @@ Most clients prefer this approach because it maximizes market potential and avoi
 - **Understand blocking vs. targeting** — they’re not the same.  
 - **Aim for generalizability** if you want scalable, market‑wide results.
 ```
-
-This version is clean, consistent, and matches the style of a professional blog post — with headings, lists, and a table for clarity.  
-
-If you’d like, I can also **add a visual diagram** of the treatment group process right after section 2 to make it more engaging for readers. Would you like me to prepare that?
