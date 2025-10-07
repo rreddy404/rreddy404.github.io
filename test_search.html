@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Functionality Test</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .test-section { margin: 20px 0; padding: 15px; border: 1px solid #ddd; border-radius: 5px; }
+        .pass { background-color: #d4edda; border-color: #c3e6cb; }
+        .fail { background-color: #f8d7da; border-color: #f5c6cb; }
+        .info { background-color: #d1ecf1; border-color: #bee5eb; }
+        button { padding: 10px 20px; margin: 5px; background: #007bff; color: white; border: none; border-radius: 3px; cursor: pointer; }
+        button:hover { background: #0056b3; }
+        #search-results { margin: 10px 0; padding: 10px; background: #f8f9fa; border-radius: 3px; }
+        .result-item { margin: 5px 0; padding: 5px; background: white; border-radius: 3px; }
+    </style>
+</head>
+<body>
+    <h1>🔍 Search Functionality Test</h1>
+    
+    <div class="test-section info">
+        <h3>📋 Test Instructions</h3>
+        <p>This page tests the search functionality for your Jekyll site. Use the buttons below to test different search scenarios.</p>
+    </div>
+
+    <div class="test-section">
+        <h3>🧪 Search Tests</h3>
+        <button onclick="testSearch('testing')">Test: "testing"</button>
+        <button onclick="testSearch('cron')">Test: "cron"</button>
+        <button onclick="testSearch('atlanta')">Test: "atlanta"</button>
+        <button onclick="testSearch('automation')">Test: "automation"</button>
+        <button onclick="testSearch('data')">Test: "data"</button>
+        <button onclick="testSearch('nonexistent')">Test: "nonexistent"</button>
+        
+        <div id="search-results"></div>
+    </div>
+
+    <div class="test-section">
+        <h3>🔗 URL Tests</h3>
+        <p>Test if search results link to correct URLs:</p>
+        <button onclick="testURL('/2025-08-25-Testing-is-Critical/')">Test: Testing is Critical</button>
+        <button onclick="testURL('/2021-01-10-Cron-jobs-for-a-Dashboard/')">Test: Cron Dashboard</button>
+        <button onclick="testURL('/2018-03-15-Switchyards---Made-in-Atlanta/')">Test: Atlanta Post</button>
+        <button onclick="testURL('/aboutme/')">Test: About Me</button>
+    </div>
+
+    <div class="test-section">
+        <h3>📊 Configuration Status</h3>
+        <div id="config-status"></div>
+    </div>
+
+    <script src="https://unpkg.com/simple-jekyll-search@latest/dest/simple-jekyll-search.min.js"></script>
+    <script>
+        let searchInstance = null;
+        
+        // Initialize search
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('Initializing search test...');
+            
+            // Test if SimpleJekyllSearch is available
+            if (typeof SimpleJekyllSearch !== 'undefined') {
+                updateConfigStatus('✅ SimpleJekyllSearch library loaded', 'pass');
+                
+                // Initialize search
+                try {
+                    searchInstance = SimpleJekyllSearch({
+                        searchInput: document.createElement('input'),
+                        resultsContainer: document.getElementById('search-results'),
+                        json: '/assets/data/searchcorpus.json',
+                        searchResultTemplate: '<div class="result-item"><a href="{url}">{title}</a><p>{content}</p></div>',
+                        noResultsText: '<div class="result-item">No results found</div>'
+                    });
+                    updateConfigStatus('✅ Search instance created successfully', 'pass');
+                } catch (error) {
+                    updateConfigStatus('❌ Error creating search instance: ' + error.message, 'fail');
+                }
+            } else {
+                updateConfigStatus('❌ SimpleJekyllSearch library not loaded', 'fail');
+            }
+        });
+
+        function testSearch(query) {
+            console.log('Testing search for:', query);
+            const resultsDiv = document.getElementById('search-results');
+            resultsDiv.innerHTML = '<p>Searching for: "' + query + '"</p>';
+            
+            if (searchInstance) {
+                // Simulate search
+                fetch('/assets/data/searchcorpus.json')
+                    .then(response => response.json())
+                    .then(data => {
+                        const results = data.filter(item => 
+                            item.title.toLowerCase().includes(query.toLowerCase()) ||
+                            item.content.toLowerCase().includes(query.toLowerCase())
+                        );
+                        
+                        if (results.length > 0) {
+                            resultsDiv.innerHTML = '<p>✅ Found ' + results.length + ' results:</p>' +
+                                results.map(result => 
+                                    '<div class="result-item"><a href="' + result.url + '">' + result.title + '</a><p>' + result.content.substring(0, 100) + '...</p></div>'
+                                ).join('');
+                        } else {
+                            resultsDiv.innerHTML = '<div class="result-item">❌ No results found</div>';
+                        }
+                    })
+                    .catch(error => {
+                        resultsDiv.innerHTML = '<div class="result-item">❌ Error loading search data: ' + error.message + '</div>';
+                    });
+            } else {
+                resultsDiv.innerHTML = '<div class="result-item">❌ Search not initialized</div>';
+            }
+        }
+
+        function testURL(url) {
+            console.log('Testing URL:', url);
+            const resultsDiv = document.getElementById('search-results');
+            resultsDiv.innerHTML = '<p>Testing URL: <a href="' + url + '" target="_blank">' + url + '</a></p>';
+            
+            // Test if URL is accessible
+            fetch(url)
+                .then(response => {
+                    if (response.ok) {
+                        resultsDiv.innerHTML += '<div class="result-item">✅ URL is accessible (Status: ' + response.status + ')</div>';
+                    } else {
+                        resultsDiv.innerHTML += '<div class="result-item">❌ URL returned error (Status: ' + response.status + ')</div>';
+                    }
+                })
+                .catch(error => {
+                    resultsDiv.innerHTML += '<div class="result-item">❌ URL test failed: ' + error.message + '</div>';
+                });
+        }
+
+        function updateConfigStatus(message, type) {
+            const statusDiv = document.getElementById('config-status');
+            const div = document.createElement('div');
+            div.className = 'result-item ' + type;
+            div.textContent = message;
+            statusDiv.appendChild(div);
+        }
+    </script>
+</body>
+</html>
