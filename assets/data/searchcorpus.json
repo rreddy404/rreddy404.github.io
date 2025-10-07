@@ -23,5 +23,10 @@
     "title": "About Me",
     "url": "/aboutme/",
     "content": "Senior Director of Data Science at Tombras. Leading the data science function and developing AI-driven advertising solutions. Previously Senior Data Scientist at 360i/Dentsu, focusing on time-series forecasting and media optimization."
+  },
+  {
+    "title": "Signals & Strategies",
+    "url": "/",
+    "content": "A personal blog focused on advertising analytics, automation, and engineering insights. Professional content about testing, experimentation, data science applications, and marketing technology."
   }
 ]

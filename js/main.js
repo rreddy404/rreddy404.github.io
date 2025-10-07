@@ -155,6 +155,13 @@ var main = {
           $("#beautifuljekyll-search-overlay").hide();
         }
       });
+      
+      // Close search when clicking outside
+      $("#beautifuljekyll-search-overlay").click(function(e) {
+        if (e.target === this) {
+          $(this).hide();
+        }
+      });
     }
   }
 };
