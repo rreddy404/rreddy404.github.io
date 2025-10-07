@@ -2,12 +2,31 @@
 
 /* Professional color scheme for analytics content */
 :root {
+  /* Analytics-focused color palette */
   --primary-color: #2c3e50;
   --secondary-color: #3498db;
   --accent-color: #e74c3c;
   --text-color: #2c3e50;
   --light-bg: #f8f9fa;
   --border-color: #dee2e6;
+  
+  /* Enhanced color variables for better theming */
+  --page-col: #FFFFFF;
+  --text-col: #2c3e50;
+  --link-col: #3498db;
+  --hover-col: #2980b9;
+  --navbar-col: #F5F5F5;
+  --navbar-text-col: #2c3e50;
+  --navbar-border-col: #DDDDDD;
+  --footer-col: #F5F5F5;
+  --footer-text-col: #777777;
+  --footer-link-col: #2c3e50;
+  --footer-hover-col: #3498db;
+  
+  /* Typography */
+  --body-font: 'Lora', 'Times New Roman', serif;
+  --header-font: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --mid-col: #808080;
 }
 
 /* Custom header styling */
@@ -117,6 +136,66 @@ blockquote {
   font-style: italic;
 }
 
+/* Search functionality styling */
+#beautifuljekyll-search-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 9999;
+  display: none;
+  padding: 2rem;
+}
+
+#nav-search-input {
+  width: 100%;
+  max-width: 600px;
+  padding: 1rem;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 4px;
+  margin: 2rem auto;
+  display: block;
+}
+
+#nav-search-exit {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+#search-results-container {
+  max-width: 600px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 4px;
+  max-height: 70vh;
+  overflow-y: auto;
+}
+
+#search-results-container li {
+  padding: 1rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+#search-results-container li:last-child {
+  border-bottom: none;
+}
+
+#search-results-container a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+#search-results-container a:hover {
+  color: var(--secondary-color);
+}
+
 /* Responsive design improvements */
 @media (max-width: 768px) {
   .post-content table {
@@ -126,5 +205,14 @@ blockquote {
   .post-content table th,
   .post-content table td {
     padding: 0.5rem;
+  }
+  
+  #beautifuljekyll-search-overlay {
+    padding: 1rem;
+  }
+  
+  #nav-search-input {
+    font-size: 1rem;
+    padding: 0.75rem;
   }
 }

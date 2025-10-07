@@ -66,6 +66,9 @@ var main = {
 
     // show the big header image
     main.initImgs();
+    
+    // Initialize search functionality
+    main.initSearch();
   },
 
   initImgs : function() {
@@ -132,6 +135,27 @@ var main = {
 	} else {
 	  $(".img-desc").hide();
 	}
+  },
+
+  initSearch : function() {
+    // Search functionality for analytics content
+    if ($("#nav-search-btn").length > 0) {
+      $("#nav-search-btn").click(function() {
+        $("#beautifuljekyll-search-overlay").show();
+        $("#nav-search-input").focus();
+      });
+      
+      $("#nav-search-exit").click(function() {
+        $("#beautifuljekyll-search-overlay").hide();
+      });
+      
+      // Close search on escape key
+      $(document).keyup(function(e) {
+        if (e.keyCode === 27) {
+          $("#beautifuljekyll-search-overlay").hide();
+        }
+      });
+    }
   }
 };
 

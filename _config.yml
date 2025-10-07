@@ -130,6 +130,16 @@ url-pretty: "rreddy404.github.io"  # Professional analytics blog
 # Truncates the excerpt to the specified number of words on the index page
 excerpt_length: 50
 
+# --- New Features --- #
+# Enable search functionality
+post_search: true
+
+# Add website title to all page titles
+title-on-all-pages: true
+
+# Edit page button in footer
+edit_page_button: true
+
 # Character used to separate site title and description in HTML document title
 # and RSS feed title
 title-separator: "-"

@@ -1,0 +1,27 @@
+[
+  {
+    "title": "Testing is Critical",
+    "url": "/2025/08/25/TestingisCritical/",
+    "content": "In advertising, the only real risk is standing still. It's a controlled gamble — a responsible way to explore the unknown. The goal of a test is to evaluate a hypothesis. It can be based on extensive technical analysis like MMMs, in‑platform tests, or simply the intuition of stakeholders."
+  },
+  {
+    "title": "Understanding Treatment Groups",
+    "url": "/2025/09/01/UnderstandingTreatmentGroups/",
+    "content": "When running a marketing experiment, one of the most important decisions you'll make is who will receive your treatment — the treatment group. This group is the population exposed to your campaign, offer, or intervention, with the goal of influencing their behavior in a measurable way."
+  },
+  {
+    "title": "Cron Jobs for Data Automation",
+    "url": "/2021/01/10/CronJobs/",
+    "content": "Automating data pipelines and scheduled tasks using cron jobs for data science and analytics workflows."
+  },
+  {
+    "title": "Cron Job Tips & Tricks",
+    "url": "/2021/01/18/CronJob%20TipsTricks/",
+    "content": "Advanced techniques and best practices for managing cron jobs in data automation and analytics environments."
+  },
+  {
+    "title": "About Me",
+    "url": "/aboutme/",
+    "content": "Senior Director of Data Science at Tombras. Leading the data science function and developing AI-driven advertising solutions. Previously Senior Data Scientist at 360i/Dentsu, focusing on time-series forecasting and media optimization."
+  }
+]
