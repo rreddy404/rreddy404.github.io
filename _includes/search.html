@@ -9,9 +9,7 @@
 <script src="https://unpkg.com/simple-jekyll-search@latest/dest/simple-jekyll-search.min.js"></script>
 <script>
   document.addEventListener('DOMContentLoaded', function() {
-    console.log('Search functionality initializing...');
     if (document.getElementById('nav-search-input')) {
-      console.log('Search input found, initializing SimpleJekyllSearch...');
       SimpleJekyllSearch({
         searchInput: document.getElementById('nav-search-input'),
         resultsContainer: document.getElementById('search-results-container'),
@@ -19,9 +17,6 @@
         searchResultTemplate: '<li><a href="{url}">{title}</a><p>{content}</p></li>',
         noResultsText: '<li>No results found</li>'
       });
-      console.log('SimpleJekyllSearch initialized');
-    } else {
-      console.log('Search input not found');
     }
   });
 </script>

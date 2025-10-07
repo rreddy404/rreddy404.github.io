@@ -1,23 +1,38 @@
 [
   {
     "title": "Testing is Critical",
-    "url": "/2025/08/25/TestingisCritical/",
+    "url": "/2025-08-25-TestingisCritical/",
     "content": "In advertising, the only real risk is standing still. It's a controlled gamble — a responsible way to explore the unknown. The goal of a test is to evaluate a hypothesis. It can be based on extensive technical analysis like MMMs, in‑platform tests, or simply the intuition of stakeholders."
   },
   {
     "title": "Understanding Treatment Groups",
-    "url": "/2025/09/01/UnderstandingTreatmentGroups/",
+    "url": "/2025-09-01-UnderstandingTreatmentGroups/",
     "content": "When running a marketing experiment, one of the most important decisions you'll make is who will receive your treatment — the treatment group. This group is the population exposed to your campaign, offer, or intervention, with the goal of influencing their behavior in a measurable way."
   },
   {
     "title": "Cron Jobs for Data Automation",
-    "url": "/2021/01/10/CronJobs/",
+    "url": "/2021-01-10-CronJobs/",
     "content": "Automating data pipelines and scheduled tasks using cron jobs for data science and analytics workflows."
   },
   {
     "title": "Cron Job Tips & Tricks",
-    "url": "/2021/01/18/CronJob%20TipsTricks/",
+    "url": "/2021-01-18-CronJob-TipsTricks/",
     "content": "Advanced techniques and best practices for managing cron jobs in data automation and analytics environments."
+  },
+  {
+    "title": "Switchyards - Made in Atlanta",
+    "url": "/2018-03-15-MadeinAtlantaMayor/",
+    "content": "In the past, I have attended the Consumer Show, which showcases local start-ups and local accomplishments. These events have always been very informative and really showcased the kinds of markets people do not normally consider."
+  },
+  {
+    "title": "Social Media Page Automation",
+    "url": "/2018-03-12-SocialPageAutomation/",
+    "content": "I am not a huge fan of social media, but I understand that it can definitely be used to help your profile. Automate URL visits to increase profile visibility using Selenium and Python."
+  },
+  {
+    "title": "Objectives",
+    "url": "/2018-02-13-Objectives/",
+    "content": "The goal of this blog is to journal my learning experiences as I try to expand my technical knowledge of automation. I have had a solid background in industrial engineering, math and OR but I want to get more experienced in coding and designing."
   },
   {
     "title": "About Me",
