@@ -1,7 +1,8 @@
 ---
 layout: page
-title: About me
-subtitle: Rahul Reddy
+title: About Me
+subtitle: Senior Director of Data Science | Advertising Analytics & Engineering
+bigimg: /img/bgimage.png
 ---
 
 ## **Tombras** — *Senior Director of Data Science*  

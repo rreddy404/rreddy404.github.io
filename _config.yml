@@ -100,7 +100,7 @@ share-links-active:
 
 # How to display the link to the website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "MyWebsite.com"  # eg. "deanattali.com/beautiful-jekyll"
+url-pretty: "rreddy404.github.io"  # Professional analytics blog
 
 # --- Web Statistics Section --- #
 
@@ -232,5 +232,5 @@ prose:
 plugins:
   - jekyll-paginate
 
-# Beautiful Jekyll / Dean Attali
-# 2fc73a3a967e97599c9763d05e564189
+# Signals & Strategies - Custom Jekyll site for advertising analytics content
+# Professional blog focused on data science, testing, and marketing technology

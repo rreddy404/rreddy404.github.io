@@ -1,0 +1,130 @@
+/* Signals & Strategies - Custom Styles */
+
+/* Professional color scheme for analytics content */
+:root {
+  --primary-color: #2c3e50;
+  --secondary-color: #3498db;
+  --accent-color: #e74c3c;
+  --text-color: #2c3e50;
+  --light-bg: #f8f9fa;
+  --border-color: #dee2e6;
+}
+
+/* Custom header styling */
+.intro-header {
+  background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+}
+
+/* Professional typography for data content */
+.post-content h1,
+.post-content h2,
+.post-content h3 {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+/* Code blocks styling for technical content */
+.post-content pre {
+  background-color: #f8f9fa;
+  border-left: 4px solid var(--secondary-color);
+  border-radius: 4px;
+}
+
+/* Table styling for data presentations */
+.post-content table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1rem 0;
+}
+
+.post-content table th,
+.post-content table td {
+  border: 1px solid var(--border-color);
+  padding: 0.75rem;
+  text-align: left;
+}
+
+.post-content table th {
+  background-color: var(--light-bg);
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+/* Custom footer styling */
+.signals-strategies-footer {
+  background-color: var(--light-bg);
+  border-top: 1px solid var(--border-color);
+}
+
+/* Professional navigation */
+.navbar-custom {
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Custom button styling */
+.btn-primary {
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+/* Tag styling for content organization */
+.blog-tags a {
+  background-color: var(--light-bg);
+  color: var(--primary-color);
+  padding: 0.25rem 0.5rem;
+  border-radius: 3px;
+  text-decoration: none;
+  font-size: 0.875rem;
+}
+
+.blog-tags a:hover {
+  background-color: var(--secondary-color);
+  color: white;
+}
+
+/* Professional post preview styling */
+.post-preview {
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.post-preview:last-child {
+  border-bottom: none;
+}
+
+/* Custom styling for analytics content */
+.analytics-highlight {
+  background-color: #e8f4fd;
+  border-left: 4px solid var(--secondary-color);
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 0 4px 4px 0;
+}
+
+/* Professional quote styling */
+blockquote {
+  border-left: 4px solid var(--secondary-color);
+  background-color: var(--light-bg);
+  padding: 1rem;
+  margin: 1rem 0;
+  font-style: italic;
+}
+
+/* Responsive design improvements */
+@media (max-width: 768px) {
+  .post-content table {
+    font-size: 0.875rem;
+  }
+  
+  .post-content table th,
+  .post-content table td {
+    padding: 0.5rem;
+  }
+}
