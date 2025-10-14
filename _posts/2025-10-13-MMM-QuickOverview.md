@@ -5,7 +5,7 @@ subtitle: "Understanding Media Mix Modeling in a Privacy-First World"
 tags: [marketing, analytics, privacy, media mix modeling, attribution]
 image: /img/robyn_hillfunction.png
 bigimg: /img/robyn_hillfunction.png
-share-img: http://rreddy404.github.io/img/robyn_hillfunction.png
+share-img: https://rreddy404.github.io/img/robyn_hillfunction.png
 ---
 
 The marketing world isn't what it used to be. Once a playground of broad targeting and easy attribution, it's now a maze of fragmented data, shifting rules, and rising consumer expectations. The days of simple last-click attribution and endless streams of user-level data are gone.
