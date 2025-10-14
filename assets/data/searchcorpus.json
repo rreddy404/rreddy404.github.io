@@ -43,5 +43,10 @@
     "title": "Signals & Strategies",
     "url": "/",
     "content": "A personal blog focused on advertising analytics, automation, and engineering insights. Professional content about testing, experimentation, data science applications, and marketing technology."
+  },
+  {
+    "title": "MMM Quick Overview",
+    "url": "/2025-10-13-MMM-QuickOverview/",
+    "content": "Understanding Media Mix Modeling in a privacy-first world. Learn how MMM measures marketing effectiveness across channels without user-level tracking, factoring in seasonality, promotions, and economic trends for privacy-safe, platform-agnostic marketing analytics."
   }
 ]
